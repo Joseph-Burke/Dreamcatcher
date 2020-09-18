@@ -1,1 +1,7 @@
 <h1>You are viewing goals/new.html.erb</h1>
+
+<%= form_with(url: './', method: 'post') do %>
+  <%= text_field_tag(:name) %>
+  <%= text_area_tag(:description) %>
+  <%= submit_tag("Set that goal!") %>
+<% end %>
