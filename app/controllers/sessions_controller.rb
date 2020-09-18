@@ -3,6 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:user_id] = User.find(params[:user][:name])
+    session[:user_id] = User.find_by(name: params[:name])
   end
 end
