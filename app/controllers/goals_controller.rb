@@ -10,7 +10,7 @@ class GoalsController < ApplicationController
   end
 
   def show
-    @goal = Goal.find(params[:goal][:id])
+    @goal = Goal.find(params[:id])
   end
 
   private
